@@ -1,0 +1,65 @@
+#grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px; /* Изменен размер ячейки сетки на 20px */
+}
+
+
+.draggable {
+    cursor: crosshair;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: .9rem;
+}
+
+.sub-category-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .9rem;
+
+}
+
+.sub-category-title {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.child-set-container {
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+}
+
+.child-set {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+}
